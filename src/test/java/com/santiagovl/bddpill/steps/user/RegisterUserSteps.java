@@ -46,6 +46,10 @@ public class RegisterUserSteps extends StepsConfiguration {
     this.passwordInput = passwordInput;
   }
 
+  @Given("a registered user with email {string}")
+  public void aRegisteredUserWithEmail(final String emailInput) {
+  }
+
   @When("^I register the user$")
   public void iRegisterTheUser() {
     final UserRestDTO userRestDTO = UserRestDTO.builder()
@@ -66,4 +70,15 @@ public class RegisterUserSteps extends StepsConfiguration {
     assertThat(response.getBody().getPassword()).isEqualTo(this.passwordInput);
   }
 
+  @Then("the user is not registered")
+  public void theUserIsNotRegistered() {
+  }
+
+  @Then("a validation error is thrown")
+  public void aValidationErrorIsThrown() {
+  }
+
+  @Then("a duplication error is thrown")
+  public void aDuplicationErrorIsThrown() {
+  }
 }
