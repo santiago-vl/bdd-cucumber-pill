@@ -1,3 +1,4 @@
+@rest
 Feature: Registers a user
   As a user
   I want to register in the system
@@ -5,7 +6,7 @@ Feature: Registers a user
 
   # Happy path scenarios
 
-  @important
+  @important @graphql
   Scenario: registers a user
     Given the email "foo@bar.com" is selected
     And the password "kI3!SkX2eF1?" is selected

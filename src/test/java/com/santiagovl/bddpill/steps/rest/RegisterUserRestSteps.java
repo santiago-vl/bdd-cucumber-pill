@@ -1,4 +1,4 @@
-package com.santiagovl.bddpill.steps.user;
+package com.santiagovl.bddpill.steps.rest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -13,7 +13,7 @@ import org.junit.Before;
 import org.springframework.http.ResponseEntity;
 
 @RequiredArgsConstructor
-public class RegisterUserSteps extends StepsConfiguration {
+public class RegisterUserRestSteps extends StepsConfiguration {
 
   // Use RestTemplate instead of inject the Controller to be more exhaustive
   private final UserController userController;
