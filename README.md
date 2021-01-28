@@ -1,4 +1,4 @@
-# BDD and Cucumber pill
+# BDD and Cucumber :pill:
 
 ## Description
 
